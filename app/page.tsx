@@ -1,65 +1,56 @@
-import Image from "next/image";
+
+import Banner from "@/components/Banner";
+import ProductCard from "@/components/ProductCard";
+import Sidebar from "@/components/Sidebar";
+import { products } from "@/lib/data";
+import { Star } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="container mx-auto px-4 py-6">
+      <Banner />
+
+      <div className="flex gap-8">
+        <Sidebar />
+
+        <div className="flex-1">
+          {/* Section Header */}
+          <div className="mb-6">
+            <div className="flex items-center gap-2 mb-4">
+              <h2 className="text-2xl font-bold text-gray-800 uppercase">Văn phòng phẩm</h2>
+              <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+            </div>
+
+            {/* Sort / Filter Bar */}
+            <div className="bg-gray-100 p-3 rounded-md flex flex-wrap items-center gap-4 text-sm text-gray-600">
+              <span className="font-bold text-gray-800">Sắp xếp:</span>
+              <button className="hover:text-[#b91c1c] transition-colors">Tên A → Z</button>
+              <button className="hover:text-[#b91c1c] transition-colors">Tên Z → A</button>
+              <button className="hover:text-[#b91c1c] transition-colors">Giá tăng dần</button>
+              <button className="hover:text-[#b91c1c] transition-colors">Giá giảm dần</button>
+              <button className="hover:text-[#b91c1c] transition-colors font-medium text-[#b91c1c]">Hàng mới</button>
+            </div>
+          </div>
+
+          {/* Product Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+            {/* Duplicate products to fill grid for demo */}
+            {products.map((product) => (
+              <ProductCard key={`${product.id}-dup`} product={{ ...product, id: `${product.id}-dup` }} />
+            ))}
+          </div>
+
+          {/* Pagination Load More */}
+          <div className="mt-8 text-center">
+            <button className="border border-[#b91c1c] text-[#b91c1c] hover:bg-[#b91c1c] hover:text-white transition-all px-8 py-2 rounded-full font-medium">
+              Xem thêm
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
     </div>
   );
 }
