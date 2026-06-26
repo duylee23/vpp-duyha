@@ -1,0 +1,132 @@
+{
+  "scrapedAt": "2026-06-26T17:09:43.811Z",
+  "shop": {
+    "username": "ennilo",
+    "shopid": "11015391"
+  },
+  "totalProducts": 11,
+  "products": [
+    {
+      "id": "25116585082",
+      "name": "Bộ lắp ghép mô hình kỹ thuật TCT GKT445 dùng cho lớp 4 và lớp 5 - Thông tư số 37/2021/TT-BGDĐT",
+      "price": 93200,
+      "image": "/cached-images/shopee_25116585082_vn_11134207_7r98o_lsgelbryu1ehf9.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "TCT",
+      "rating": 5,
+      "sold": 16
+    },
+    {
+      "id": "12912323201",
+      "name": "Bộ lắp ghép mô hình kỹ thuật Hoa Minh dùng chung cho lớp 4 và lớp 5 - Thông tư số 37/2021/TT-BGDĐT ngày 30/12/2021",
+      "price": 92840,
+      "originalPrice": 105500,
+      "image": "/cached-images/shopee_12912323201_vn_11134207_7r98o_lry7vrv74n1551.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 5,
+      "sold": 8,
+      "discount": 12
+    },
+    {
+      "id": "13010760384",
+      "name": "Bộ dụng cụ vật liệu cắt khâu thêu Lớp 4 Hoa Minh",
+      "price": 12700,
+      "image": "/cached-images/shopee_13010760384_7aba0056eb9fd6471dcb32c83875520b.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 4.9,
+      "sold": 0
+    },
+    {
+      "id": "24734639577",
+      "name": "[THANH LÝ] Bộ đồ dùng thực hành Toán lớp 4 và Toán lớp 5 - Mic Minh Đức",
+      "price": 44100,
+      "image": "/cached-images/shopee_24734639577_vn_11134207_7r98o_lytm32m5qjkx43.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 5,
+      "sold": 10
+    },
+    {
+      "id": "13510744775",
+      "name": "Bộ dụng cụ vật liệu cắt khâu thêu Lớp 5 Hoa Minh",
+      "price": 92840,
+      "originalPrice": 105500,
+      "image": "/cached-images/shopee_13510744775_fed834c48811acb40a325bbbb7c4bc04.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 5,
+      "sold": 3,
+      "discount": 12
+    },
+    {
+      "id": "13012323027",
+      "name": "Bộ lắp ghép mô hình kỹ thuật Lớp 5 Hoa Minh",
+      "price": 92840,
+      "originalPrice": 105500,
+      "image": "/cached-images/shopee_13012323027_4609de0a94f81585acdef93e58d1d493.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 4.9,
+      "sold": 0,
+      "discount": 12
+    },
+    {
+      "id": "29057640639",
+      "name": "Bộ đồ dùng thực hành học toán và học vần Lớp 1 - Theo thông tư 37/2021/TT-BGDĐT ngày 30/12/2021 - Hoa Minh",
+      "price": 104896,
+      "originalPrice": 119200,
+      "image": "/cached-images/shopee_29057640639_vn_11134207_7r98o_lytkubide79pd4.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 4.9,
+      "sold": 0,
+      "discount": 12
+    },
+    {
+      "id": "16888006865",
+      "name": "Bộ hình khối Toán lớp 1,2,3 - Theo thông tư số 37/2021/TT-BGDĐT ngày 30/12/2021",
+      "price": 97300,
+      "image": "/cached-images/shopee_16888006865_sg_11134201_22100_03x10gdm1uive9.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 5,
+      "sold": 24
+    },
+    {
+      "id": "20756006186",
+      "name": "Bộ đồ dùng thực hành học Toán lớp 3 - Theo thông tư số 37/2021/TT-BGDĐT ngày 30/12/2021",
+      "price": 111672,
+      "originalPrice": 126900,
+      "image": "/cached-images/shopee_20756006186_sg_11134201_22100_291cnf601uivf3.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 5,
+      "sold": 20,
+      "discount": 12
+    },
+    {
+      "id": "10350252473",
+      "name": "Bộ thực hành phân số và hình học môn Toán lớp 5 Hoa Minh",
+      "price": 50900,
+      "image": "/cached-images/shopee_10350252473_7f3472e14bcc7f553c37a632525e17ec.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 4.9,
+      "sold": 0
+    },
+    {
+      "id": "21156007792",
+      "name": "Bộ đồ dùng thực hành học Toán lớp 2 - Theo thông tư số 37/2021/TT-BGDĐT ngày 30/12/2021",
+      "price": 128920,
+      "originalPrice": 146500,
+      "image": "/cached-images/shopee_21156007792_sg_11134201_22100_ixmundtv2uiv98.jpg",
+      "category": "Văn phòng phẩm",
+      "brand": "Ennilo",
+      "rating": 4.9,
+      "sold": 0,
+      "discount": 12
+    }
+  ]
+}
