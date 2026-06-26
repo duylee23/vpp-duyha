@@ -36,6 +36,18 @@ yarn-error.log*
 # vercel
 .vercel
 
+# scraped / temp data
+*.json
+!package.json
+!tsconfig.json
+!data/shopee-products.ts
+!data/shopee-products.json
+
+# scripts (keep parse, ignore scrapers)
+scripts/scrape-*.mjs
+scripts/fetch-*.mjs
+scripts/run-with-*.mjs
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
