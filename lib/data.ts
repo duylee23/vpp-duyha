@@ -1,7 +1,23 @@
+export interface ProductModel {
+  model_id: number;
+  name: string;
+  price: number;
+  stock: number | null;
+  image: string | null;
+}
+
+export interface ProductVariation {
+  name: string;
+  options: string[];
+  images: string[];
+}
+
 export interface Product {
   id: string;
   name: string;
   price: number;
+  price_min?: number;
+  price_max?: number;
   originalPrice?: number;
   image: string;
   category: string;
@@ -9,6 +25,11 @@ export interface Product {
   rating: number;
   sold: number;
   discount?: number;
+  description?: string;
+  images?: string[];
+  models?: ProductModel[];
+  variations?: ProductVariation[];
+  categories?: string[];
 }
 
 import { shopeeProducts } from '@/data/shopee-products';

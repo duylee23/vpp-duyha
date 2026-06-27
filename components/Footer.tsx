@@ -22,7 +22,7 @@ export default function Footer() {
                         <h4 className="font-bold mb-4 dark:text-white">Liên hệ</h4>
                         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
                             <li>Hotline: 0392022011</li>
-                            <li>Email: support@duyha.com</li>
+                            <li>Email: <a href="mailto:vumai.ktth@gmail.com" className="hover:underline">vumai.ktth@gmail.com</a></li>
                         </ul>
                     </div>
                     <div>

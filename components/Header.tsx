@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
-import { ShoppingCart, User, Phone, ChevronDown } from 'lucide-react';
+import { ShoppingCart, User, Phone, Mail, ChevronDown } from 'lucide-react';
 import SearchBar from '@/components/SearchBar';
 import { getCategories } from '@/lib/data';
 
@@ -30,6 +30,17 @@ export default function Header() {
                             <div className="flex flex-col text-xs">
                                 <span className="font-bold text-base">0392022011</span>
                                 <span className="opacity-80">Hỗ trợ khách hàng</span>
+                            </div>
+                        </div>
+
+                        {/* Email */}
+                        <div className="flex items-center gap-2 hidden lg:flex">
+                            <div className="w-8 h-8 bg-[#8b1515] rounded-full flex items-center justify-center">
+                                <Mail className="w-4 h-4" />
+                            </div>
+                            <div className="flex flex-col text-xs">
+                                <a href="mailto:vumai.ktth@gmail.com" className="font-bold text-sm hover:underline">vumai.ktth@gmail.com</a>
+                                <span className="opacity-80">Gửi Email</span>
                             </div>
                         </div>
 

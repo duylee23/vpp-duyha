@@ -1,5 +1,6 @@
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { ShoppingCart, Star } from 'lucide-react';
 import { Product } from '@/lib/data';
 import { ZaloIcon, MessengerIcon } from './icons';
@@ -14,7 +15,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         : 0;
 
     return (
-        <div className="bg-white rounded-lg border border-gray-100 p-3 hover:shadow-lg transition-all duration-300 group cursor-pointer relative overflow-hidden dark:bg-gray-900 dark:border-2 dark:border-gray-700 dark:shadow-[0_4px_20px_-12px_rgba(255,255,255,0.1)]">
+        <Link href={`/products/${product.id}`} className="block bg-white rounded-lg border border-gray-100 p-3 hover:shadow-lg transition-all duration-300 group cursor-pointer relative overflow-hidden dark:bg-gray-900 dark:border-2 dark:border-gray-700 dark:shadow-[0_4px_20px_-12px_rgba(255,255,255,0.1)]">
             {/* Discount Badge */}
             {/* Discount Badge Removed - Contact for price */}
 
@@ -60,15 +61,29 @@ export default function ProductCard({ product }: ProductCardProps) {
                 <div className="pt-2 flex items-center justify-between">
                     <span className="text-[#b91c1c] dark:text-red-400 font-bold text-base">Liên hệ: 0392022011</span>
                     <div className="flex gap-2">
-                        <button className="hover:scale-110 transition-transform" title="Liên hệ qua Zalo">
+                        <a
+                            href="https://zalo.me/0392022011"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="hover:scale-110 transition-transform inline-block"
+                            title="Liên hệ qua Zalo"
+                        >
                             <ZaloIcon className="w-7 h-7" />
-                        </button>
-                        <button className="hover:scale-110 transition-transform" title="Liên hệ qua Messenger">
+                        </a>
+                        <a
+                            href="https://www.facebook.com/mai.vu.7906"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="hover:scale-110 transition-transform inline-block"
+                            title="Liên hệ qua Messenger"
+                        >
                             <MessengerIcon className="w-7 h-7 text-[#0084FF]" />
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }
